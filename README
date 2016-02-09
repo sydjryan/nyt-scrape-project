@@ -30,6 +30,41 @@ example:
     final output to a csv file with columns "file" (the path to the article) and "movie_id".
 
 
+### breakdown of input data
 
+* actors.tsv
+    columns:
+    * person_id, an id corresponding to the person
+    * movie_id, an id corresponding to the movie they acted in
+    * name, a string with their name
+
+* directors.tsv
+    columns:
+    * person_id, an id corresponding to the person
+    * movie_id, an id corresponding to the movie they directed
+    * name, a string with their name
+
+* names_aka.tsv
+    columns:
+    * person_id, an id corresponding to the person
+    * name, an alternate name that the person might go by (alternate spelling, nicknames, etc)
+
+* titles.tsv
+    columns:
+    * movie_id, an id corresponding to the movie
+    * title, a string containing the movie name
+    * production_year, an int stating the production year of the movie
+
+* titles_aka.tsv
+    columns:
+    * movie_id, an id corresponding to the movie
+    * alternate_title, an alternate title that the movie might go by
+
+* /nyt/
+    This directory contains data for many years of nyt movie reviews.
+    Subdirectories are years, and look like "/nyt/2015", "/nyt/2012", etc. These
+    year subdirectories may contain more subdirectories, i.e. "/nyt/2015/1/...".
+    Within these subdirectories are html files with a complete scrape of
+    an online nyt movie review.
 
 
